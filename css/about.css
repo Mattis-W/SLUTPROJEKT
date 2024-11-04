@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Montserrat:ital,wght@0,100..900;0,600;1,100..900;1,600&display=swap');
+
+
+body{
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: url('../img/cursor.cur'), auto !important;
+    
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: white;
+    color: black;
+}
+ul {
+    background-color: black;
+    width: 80%;
+    list-style-type: none;
+    overflow: hidden;
+    display: flex;
+    justify-content: center ;
+    list-style-type: none;
+    margin: 0 auto;
+}
+
+a {
+    display: block;
+}
+
+.active {
+    background-color: white;
+    color: black;
+}
+
+h1 {
+    font-family: "Montserrat", serif;
+}
+
+p {
+    font-family: "Montserrat", serif;
+    font-size: large;
+}
+
+.aboutusdiv {
+    width: 1000px;
+    height: 500px;
+    background-color: aliceblue;
+    margin: auto;
+}

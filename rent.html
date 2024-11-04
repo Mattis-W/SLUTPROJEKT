@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Montserrat:ital,wght@0,584;1,584&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/rent.css">
+</head>
+<body>
+    <ul class="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cars.html">Cars</a></li>
+        <li><a href="locations.html">Locations</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">About us</a></li>
+    </ul>
+    
+    <form id="rentform" action="submitrent.html" method="GET" onsubmit="submitForm(event)">
+        <select required name="model" id="model">
+            <option value="optA">Jaguar XF</option>
+            <option value="optB">Subaru Forester</option>
+            <option value="optC">Mazda 3</option>
+            <option value="optD">Skoda Kamiq</option>
+            <option value="optE">Tesla Model Y</option>
+            <option value="optF">Audi S7 Sportback</option>
+        </select>
+        <div class="datepicker">
+        <h4>Rent start date</h4>
+        <input class="datefrom" id="start" type="datetime-local" required min="2024-10-28T00:00">
+        <h4>Rent end date</h4>
+        <input class="dateto" id="end" type="datetime-local" min="" required>
+    </div>  
+
+    <label for="email">Email Adress</label>
+
+    <input type="email" name="email" id="email">
+
+    <label for="firstname">card holder first name</label>
+
+    <input type="text" placeholder="Pär" id="firstname" name="firstname">
+
+    <label for="lastname">card holder first name</label>
+
+    <input type="text" placeholder="Flygare" id="lastname" name="lastname">
+    <div class="carddetails">
+        <label for="cardnumber">Card Number</label>
+        <div class="cardnumber">
+            <input type="text" id="cardnumber1" name="cardnumber1" maxlength="4" required placeholder="1234">
+            <input type="text" id="cardnumber2" name="cardnumber2" maxlength="4" required placeholder="1234">
+            <input type="text" id="cardnumber3" name="cardnumber3" maxlength="4" required placeholder="1234">
+            <input type="text" id="cardnumber4" name="cardnumber4" maxlength="4" required placeholder="1234">
+        </div>
+        <label for="expire">exp date</label>
+        <input type="text" name="expire" id="expire" required placeholder="11/24">
+
+        <label for="cvc">CVC</label>
+        <input id="cvc" name="cvc" type="text" maxlength="3" placeholder="123">
+    </div>
+
+    <label for="phone">Enter a phone number:</label><br><br>
+
+    <input required type="tel" id="phone" name="phone" placeholder="070 123 45 67">
+
+    <label for="street">Street Address:</label>
+    <input type="text" id="street" name="street" required placeholder="89c Hampnäsvägen"><br>
+
+    <label for="city">City:</label>
+    <input type="text" id="city" name="city" required placeholder="Själevad"><br>
+
+    <label for="zip">Zip Code:</label>
+    <input type="text" id="zip" name="zip" required placeholder="12345"><br>
+
+    <label for="country">Country:</label>
+    <input type="text" id="country" name="country" required placeholder="Sweden"><br>
+
+    <label for="acceptrules">I Accept the <a href="tos.html">Terms of service</a></label>
+    <input required type="checkbox" id="acceptrules">
+
+    <h3 class="price">0 €</h3>
+
+    <script>
+        const pricePerDay = 46.7;
+        const startDate1 = document.getElementById("start");
+        const endDate1 = document.getElementById("end");
+    
+        function calculatePrice() {
+            const start = new Date(startDate1.value);
+            const end = new Date(endDate1.value);
+    
+            if (!isNaN(start) && !isNaN(end) && start < end) {
+                const days = Math.ceil((end - start) / (1000 * 60 * 60 * 24));
+                const total = days * pricePerDay;
+                document.querySelector(".price").textContent = `${total.toFixed(2)} €`;
+            } else {
+                document.querySelector(".price").textContent = `0 €`;
+            }
+        }
+    
+        startDate1.addEventListener("change", () => {
+            endDate1.min = startDate1.value;
+            calculatePrice();
+        });
+        
+        endDate1.addEventListener("change", calculatePrice);
+    
+        function submitForm(event) {
+            event.preventDefault(); // Prevent default submission
+            const email = document.getElementById('email').value; 
+            window.location.href = `submitrent.html?email=${encodeURIComponent(email)}`; 
+        }
+    </script>
+    
+
+    <input class="submit1" type="submit" value="Submit">
+
+    </form>
+
+</body>
+</html> 

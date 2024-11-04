@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Montserrat:ital,wght@0,100..900;0,600;1,100..900;1,600&display=swap');
+
+
+body{
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: white;
+    color: black;
+}
+ul {
+    background-color: black;
+    width: 80%;
+    list-style-type: none;
+    overflow: hidden;
+    display: flex;
+    justify-content: center ;
+    list-style-type: none;
+    margin: 0 auto;
+}
+
+a {
+    display: block;
+}
+
+.active {
+    background-color: white;
+    color: black;
+}
+
+.container1 {
+    margin: auto;
+    width: 80%;
+    height: 400px;
+    opacity: 1;
+}
+
+img {
+    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h3 {
+    font-family: "Montserrat", serif;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.2;
+    text-align: left;
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+    letter-spacing: 0.02em;
+    margin: 0.5em 0;
+}
+
+h1 {
+    font-family: "Montserrat", serif;
+    text-align: center;
+    font-size: 3rem;
+    text-decoration: underline;
+}
+
+.mw {
+    width: 50%;
+    height: auto;
+    margin: auto;
+}
+
+p {
+    font-family: "Montserrat", serif;
+}
+
+form {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start;
+    max-width: 400px;
+    font-family: "Montserrat", serif;
+    
+}
+
+label {
+    margin-top: 10px; 
+}
+
+input[type="text"], 
+input[type="email"], 
+textarea {
+    width: 100%; 
+    padding: 10px;
+    margin-top: 5px;
+    font-family: "Montserrat", serif;
+
+}
+
+input[type="submit"] {
+    margin-top: 20px;
+    padding: 10px 20px; 
+}
+
+textarea {
+    resize: vertical;
+    font-family: "Montserrat", serif;
+
+}

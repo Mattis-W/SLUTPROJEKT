@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+<head>
+    
+
+  <script src='https://api.mapbox.com/mapbox-gl-js/v3.7.0/mapbox-gl.js'></script>
+<link href='https://api.mapbox.com/mapbox-gl-js/v3.7.0/mapbox-gl.css' rel='stylesheet' />
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Montserrat:ital,wght@0,584;1,584&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/locations.css">
+</head>
+<body>
+    <ul class="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cars.html">Cars</a></li>
+        <li><a class="active" href="locations.html">Locations</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">About us</a></li>
+    </ul>
+
+    <h2>Where To Find Us</h2>
+    <p>Hampnäsvägen 89C Själevad 894 31</p>
+
+
+    <!--Karta-->
+    <div id="map"></div>
+    <script> 
+        mapboxgl.accessToken = 'pk.eyJ1IjoiZHVya2trIiwiYSI6ImNtMnN5bHNiYTAyeW0ya3BkNmtwM2J2dnQifQ.tE6GNvxkJUqtfUvBM1qrQQ';
+        const map = new mapboxgl.Map({
+            container: 'map', 
+            style: 'mapbox://styles/durkkk/cm2t383bi00fl01qt18z47z5v',
+            center: [18.586640, 63.298680,],
+            zoom: 15, 
+            
+        });
+        
+        
+        new mapboxgl.Marker()
+    .setLngLat([18.586640, 63.298680]) // karta "pin"
+    .addTo(map);
+        </script>
+      
+</body>
+</html> 

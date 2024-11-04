@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Montserrat:ital,wght@0,100..900;0,600;1,100..900;1,600&display=swap');
+       
+       /**
+       * @license
+       * Copyright 2024 Google LLC. All Rights Reserved.
+       * SPDX-License-Identifier: Apache-2.0
+       */
+
+body{
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: white;
+    color: black;
+}
+ul {
+    background-color: black;
+    width: 80%;
+    list-style-type: none;
+    overflow: hidden;
+    display: flex;
+    justify-content: center ;
+    list-style-type: none;
+    margin: 0 auto;
+}
+
+a {
+    display: block;
+}
+
+.active {
+    background-color: white;
+    color: black;
+}
+
+
+h3 {
+    font-family: "Montserrat", serif;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.2;
+    text-align: center;
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+    letter-spacing: 0.02em;
+    margin: 0.5em 0;
+}
+
+h1 {
+    font-family: "Montserrat", serif;
+    text-align: center;
+    font-size: 3rem;
+}
+
+
+p, h2{
+    font-family: "Montserrat";
+    text-align: center;
+}
+
+#map {
+    width: 500px;
+    height: 500px;
+    border: .05rem solid black;
+    border-radius: 15%;
+    margin: auto;
+    margin-top: 10%;
+}
