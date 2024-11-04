@@ -49,6 +49,8 @@ h1 {
 p {
     font-family: "Montserrat", serif;
     font-size: large;
+    padding: 1rem;
+    text-align: center;
 }
 
 .aboutusdiv {
