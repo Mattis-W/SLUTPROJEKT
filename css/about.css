@@ -59,3 +59,9 @@ p {
     background-color: aliceblue;
     margin: auto;
 }
+
+#logo1 {
+    margin: auto;
+    width: 900px;
+    height: auto;
+}

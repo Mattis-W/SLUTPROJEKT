@@ -15,52 +15,79 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    
-    <ul class="navbar">
-        <li><a class="active" href="index.html">Home</a></li>
-        <li><a href="cars.html">Cars</a></li>
-        <li><a href="locations.html">Locations</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="about.html">About us</a></li>
-    </ul>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
 
-    
+    <header>
+        <nav aria-label="Main navigation">    
+            <ul class="navbar">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="cars.html">Cars</a></li>
+                <li><a href="locations.html">Locations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
     <div class="container1">
         <h1> Need a car? Rent your ride here <br>
-            quick <br> easy <br> and <br>cheap. <img class="mercedes" src="img/mercedes1.png" alt="mercedes gt"></h1>
+            <strong> quick </strong> <br> <strong> easy</strong> <br> and <br> <strong> cheap. </strong> <img class="mercedes" src="img/mercedes1.png" alt="mercedes gt car"></h1>
     </div>
     <h2>How it works</h2>
-    <div id="wrapper2"><div id="a"><img class="icon1" src="img/chooseicon.png" alt="mouseclick"> <p>choose</p> </div><div id="b"><img src="img/moneyicon.png" alt="money"><p>pay</p></div><div id="c"><img src="img/driveicon.png" alt="drive"><p>drive</p></div>
+    <div id="wrapper2">
+        <div id="a"><img class="icon1" src="img/chooseicon.png" alt="icon of a computer cursor that clicks">
+        <p><strong>choose</strong></p>
+        </div><div id="b"><img src="img/moneyicon.png" alt="money icon">
+        <p><strong>pay</strong></p></div><div id="c"><img src="img/driveicon.png" alt="icon of a cars steering wheel">
+        <p><strong> drive </strong></p></div>
     </div>
     <h3>Vehicles</h3>
     <div id="wrapper"> 
         <div id="first" class="Vehicle1">
-        <img src="img/car-1.jpg" class="V1" alt="Jaguar">
+        <img src="img/car-1.jpg" class="V1" alt="Jaguar car">
         <a href="car1.html">Jaguar XF 2016</a>
         <p>Mid size <br>Sports car / coupe <br>A fun luxury sports car
         </p>
     </div>
     <div id="second" class="Vehicle2">
-    <img src="img/car-2.jpg" class="V2" alt="Subaru">
+    <img src="img/car-2.jpg" class="V2" alt="Subaru car">
     <a href="car2.html">Subaru Forester 2016</a>
     <p>Large <br> Economy car <br> Good choice for any adventure</p>
     </div>
     <div id="third" class="Vehicle3">
-        <img src="img/car-3.jpg" class="V3" alt="Mazda">
+        <img src="img/car-3.jpg" class="V3" alt="Mazda car">
         <a href="car3.html" >Mazda 3 2019</a>
         <p>Mid size <br> Economy car <br> perfect for the road trip</p>
     </div>
-    <div id="fourth" class="Vehicle4"><img src="img/car-4.jpg" class="V4" alt="Skoda">
+    <div id="fourth" class="Vehicle4"><img src="img/car-4.jpg" class="V4" alt="Skoda car">
         <a href="car4.html" >Skoda Kamiq 2022</a>
         <p>Large <br>Economy car <br>Fits a bigger family cheaply</p>
     </div>
-    <div id="fifth" class="Vehicle5"><img src="img/car-5.jpg" class="V5" alt="Tesla">
+    <div id="fifth" class="Vehicle5"><img src="img/car-5.jpg" class="V5" alt="Tesla car">
         <a href="car5.html" >Tesla Model Y 2022</a><p>Large <br>Electric Coupé<br>Spacious fully electric family car</p>
     </div>
-    <div id="sixth" class="Vehicle6"><img src="img/car-6.jpg" class="V6" alt="Audi">
+    <div id="sixth" class="Vehicle6"><img src="img/car-6.jpg" class="V6" alt="Audi car">
         <a href="car6.html" >Audi S7 Sportback</a><p>Mid size <br>Sports car <br>Fun but useful car</p>
     </div>
     </div>
+</main>
+
+<link rel="stylesheet" href="css/sa11y.min.css"/>
+
+<!-- JavaScript -->
+<script type="module">
+  import { Sa11y, Lang } from '../assets/js/sa11y.esm.js';
+  import Sa11yLangEn from '../assets/js/lang/en.js';
+
+  // Set translations
+  Lang.addI18n(Sa11yLangEn.strings);
+
+  // Instantiate
+  const sa11y = new Sa11y({
+    checkRoot: "body",
+    // Customize with props.
+  });
+</script>
 </body>
 </html> 
 
