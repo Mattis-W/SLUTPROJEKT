@@ -7,16 +7,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" media="screen and (max-width: 480px)" href="css/mobile.css">
+    <link rel="stylesheet" media="screen and (min-width: 481px) and (max-width: 10024px)" href="css/about.css">
 </head>
 <body>
-    <ul class="navbar">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="cars.html">Cars</a></li>
-        <li><a href="locations.html">Locations</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a class="active" href="about.html">About us</a></li>
-    </ul>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header>
+        <nav aria-label="Main navigation">    
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cars.html">Cars</a></li>
+                <li><a href="locations.html">Locations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a class="active" href="about.html">About us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
     <div class="aboutusdiv">
     <h1>About Us</h1>
     <p>Welcome to Hampnäs Rentals!<br>
@@ -30,6 +39,7 @@
           Join our community of satisfied customers today!</p>
           <img class="logo1" src="img/impius-logo-red.svg" alt="logo red">
     </div>
+    </main>
 
 </body>
 </html>

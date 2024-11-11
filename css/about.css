@@ -4,17 +4,15 @@
 body{
     margin: 0;
     padding: 0;
-    background-size: cover;
-    background-repeat: no-repeat;
     cursor: url('../img/cursor.cur'), auto !important;
-    
 }
+
 
 li a {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 0.875rem 1rem;
     text-decoration: none;
 }
 
@@ -42,8 +40,23 @@ a {
     color: black;
 }
 
+h3 {
+    font-family: "Montserrat", serif;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.2;
+    text-align: center;
+    font-size: 2.5vw;
+    color: rgb(0, 0, 0);
+    letter-spacing: 0.02em;
+    margin: 0.5em 0;
+}
+
 h1 {
     font-family: "Montserrat", serif;
+    text-align: center;
+    font-size: 3em;
+    font-weight: 200;
 }
 
 p {
@@ -54,14 +67,33 @@ p {
 }
 
 .aboutusdiv {
-    width: 1000px;
-    height: 500px;
+    width: 62.5rem;
+    height: 31.25rem;
     background-color: aliceblue;
-    margin: auto;
+max-width: fit-content;    margin: auto;
 }
 
 #logo1 {
     margin: auto;
-    width: 900px;
+    width: 56.25rem;
     height: auto;
 }
+
+.skip-link {
+    position: absolute;
+    top: -2.5rem; 
+    left: 0;
+    background: #000;
+    color: #fff;
+    padding: 0.5rem;
+    z-index: 1000; 
+    transition: top 0.3s;
+}
+.skip-link:focus {
+    top: 0; 
+}
+
+main {
+    width: 100%;
+}
+

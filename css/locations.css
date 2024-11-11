@@ -6,19 +6,19 @@
        * SPDX-License-Identifier: Apache-2.0
        */
 
+
 body{
     margin: 0;
     padding: 0;
-    background-size: cover;
-    background-repeat: no-repeat;
-   
+    cursor: url('../img/cursor.cur'), auto !important;
 }
+
 
 li a {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 0.875rem 1rem;
     text-decoration: none;
 }
 
@@ -72,8 +72,8 @@ p, h2{
 }
 
 #map {
-    width: 500px;
-    height: 500px;
+    width: 31.25rem;
+    height: 31.25rem;
     border: .05rem solid black;
     border-radius: 15%;
     margin: auto;
