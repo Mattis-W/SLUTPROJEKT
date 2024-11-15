@@ -278,3 +278,16 @@ tr:nth-child(even) {
     padding: 8px;
     margin: auto;
 }
+
+.back1 {
+    border: 1.6px solid black;
+    border-radius: 0.3125rem;
+    width: 10.0625rem;
+    text-decoration: none;
+    color: black;
+}
+
+.back1:hover {
+    background-color: black;
+    color: white;
+}
