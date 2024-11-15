@@ -241,3 +241,40 @@ textarea {
     width: 90px;
     height: auto;
 }
+
+.rent {
+    text-align: center;
+    margin: auto;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    width: 9.375rem;
+    height: 2.5rem;
+    font-family: "Montserrat", serif;
+    font-weight: 600;
+    font-size: 2rem;
+    color: rgb(71, 255, 117);
+    text-decoration: none;
+    border: 2px solid rgb(71, 255, 117);
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+  .row2 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.25rem;
+  }
+
+  .column2 {
+    box-sizing: border-box;
+    padding: 1.25rem;
+  }
+  
+  td, th {
+    border: 1px solid black;
+    text-align: left;
+    padding: 8px;
+    margin: auto;
+}
