@@ -4,15 +4,16 @@
 body{
     margin: 0;
     padding: 0;
-    cursor: url('../img/cursor.cur'), auto !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
 }
-
 
 li a {
     display: block;
     color: white;
     text-align: center;
-    padding: 0.875rem 1rem;
+    padding: 14px 16px;
     text-decoration: none;
 }
 
