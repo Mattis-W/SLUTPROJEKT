@@ -110,7 +110,7 @@ h2 {
     grid-template-columns: 1fr;
     gap: 1.5rem;
     padding: 1rem;
-    width: 100%;
+    width: 80%;
     max-width: 25rem;
     margin: 0 auto;
 }
@@ -193,6 +193,7 @@ main {
 
 p {
     font-family: "Montserrat", serif;
+    font-size: 3vw;
 }
 
 form {
@@ -200,6 +201,7 @@ form {
     flex-direction: column; 
     align-items: flex-start;
     max-width: 400px;
+    width: auto;
     font-family: "Montserrat", serif;
     
 }
