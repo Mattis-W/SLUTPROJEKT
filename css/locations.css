@@ -79,3 +79,17 @@ p, h2{
     margin: auto;
     margin-top: 10%;
 }
+
+.skip-link {
+    position: absolute;
+    top: -2.5rem; 
+    left: 0;
+    background: #000;
+    color: #fff;
+    padding: 0.5rem;
+    z-index: 1000; 
+    transition: top 0.3s;
+}
+.skip-link:focus {
+    top: 0; 
+}
